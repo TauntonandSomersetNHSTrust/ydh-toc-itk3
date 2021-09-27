@@ -16,13 +16,13 @@ This repo outlines the steps that have been taken to migrate from Kettering XML 
 
 ### Background
 
-Yeovil District Hospital NHS Foundation Trust manages Yeovil District Hospital in Yeovil, Somerset.
+Yeovil District Hospital NHS Foundation Trust manages [Yeovil District Hospital](https://yeovilhospital.co.uk/) in Yeovil, Somerset.
 
 Yeovil is situated next to the Dorset county border and sees a sizeable amount of patients from Dorset every year (15% of all inpatients in 2020 were from Dorset).
 
 Every encounter with a patient generates a document, usually an inpatient discharge summary, emergency discharge summary, or outpatient clinic letter.
 
-These documents are generated as PDFs, and then converted to HTML (using [Docsmith](https://github.com/Fdawgs/docsmith)) for them to be placed in an XML payload using the Kettering XML format.
+These documents are generated as PDFs and then converted to HTML (using [Docsmith](https://github.com/Fdawgs/docsmith)) for them to be placed in an XML payload using the Kettering XML format.
 
 The Kettering XML payloads are sent to a patient's primary care provider system electronically via [NHS Digital's MESH](https://digital.nhs.uk/services/message-exchange-for-social-care-and-health-mesh).
 
@@ -41,8 +41,8 @@ This all impacts patient care, with the issue of missing content being the most 
 <img alttext="A document printed from TPP's SystmOne, with overlapping text" src="https://raw.githubusercontent.com/Fdawgs/ydh-toc-itk3/master/docs/images/example_overlapping.png" width="480">
 
 Multiple Dorset-based GP practices have reported back one or more of these issues since 2018-10-09.
-Attempts to rectify this on YDH's end proved unsuccessful and so this was raised with Dorset CCG on 2020-06-19 for them to raise with TPP.
-At the time of writing (2021-09-27) this has still not been resolved.
+Attempts to rectify this on YDH's end proved unsuccessful and so this was raised with [Dorset CCG](https://www.dorsetccg.nhs.uk/) on 2020-06-19 for them to raise with TPP.
+At the time of writing (2021-09-27), this has still not been resolved.
 
 It was [noticed in an article in Digital Health](https://www.digitalhealth.net/2020/08/clinical-patient-discharge-summaries-soon-to-be-sent-electronically-to-gps/) that TPP was trialling the support of FHIR resources in Dorset, and so we are hoping that migrating to NHS Digital's Transfer of Care and ITK3 FHIR resources will resolve the aforementioned issues and, if not, at least future proof us for the eventual full migration to the HL7 FHIR standards.
 
