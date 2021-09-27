@@ -18,7 +18,7 @@ This repo outlines the steps that have been taken to migrate from Kettering XML 
 
 Yeovil District Hospital NHS Foundation Trust manages [Yeovil District Hospital](https://yeovilhospital.co.uk/) in Yeovil, Somerset.
 
-Yeovil is situated next to the Dorset county border and the hospital sees a sizeable amount of patients from Dorset every year (14.92% of all A&E attendances and 15% of all inpatients in 2020 were from Dorset).
+Yeovil is situated next to the Dorset county border and the hospital sees a sizeable amount of patients from Dorset every year (14.92% of A&E attendances and 15% of inpatients in 2020 were from Dorset).
 
 Every encounter with a patient generates a document, usually an inpatient discharge summary, emergency discharge summary, or outpatient clinic letter.
 These documents are generated as PDFs and then converted to HTML (using [Docsmith](https://github.com/Fdawgs/docsmith)) for them to be placed in an XML payload using the Kettering XML format.
