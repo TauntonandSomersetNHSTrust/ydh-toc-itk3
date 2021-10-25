@@ -28,7 +28,7 @@ Dorset GP Practices use [TPP's SystmOne](https://tpp-uk.com/products/), whilst S
 
 EMIS has no issue receiving these documents as HTML and presenting them in their system.
 
-SystmOne however, strips a large amount of the HTML tags out (including all the image tags) and then saves the documents as `.tiff` files which have led to a number of issues, including:
+SystmOne however, strips a large amount of the HTML elements out (including all `<img>` elements) and then saves the documents as `.tif` files, which have led to several issues, including:
 
 -   Paragraphs overlapping each other, leading to unreadable documents
 -   All images removed from documents (cannot send scan results)
@@ -36,13 +36,15 @@ SystmOne however, strips a large amount of the HTML tags out (including all the 
 
 This all impacts patient care, with the issue of missing content being the most severe.
 
-<img alttext="A document printed from TPP's SystmOne, with overlapping text" src="https://raw.githubusercontent.com/Fdawgs/ydh-toc-itk3/master/docs/images/example_overlapping.png" width="480">
+<img alttext="A document printed from TPP's SystmOne, with overlapping text" src="https://raw.githubusercontent.com/Fdawgs/ydh-toc-itk3/master/docs/images/example_overlapping_1.png" width="480">
 
-Multiple Dorset-based GP practices have reported back one or more of these issues since 2018-10-09.
-Attempts to rectify this on YDH's end proved unsuccessful and so this was raised with [Dorset CCG](https://www.dorsetccg.nhs.uk/) on 2020-06-19 for them to raise with TPP.
-At the time of writing (2021-09-27), this has still not been resolved.
+<img alttext="Another document printed from TPP's SystmOne, with overlapping text" src="https://raw.githubusercontent.com/Fdawgs/ydh-toc-itk3/master/docs/images/example_overlapping_2.png" width="480">
 
-It was [noticed in an article in Digital Health](https://www.digitalhealth.net/2020/08/clinical-patient-discharge-summaries-soon-to-be-sent-electronically-to-gps/) that TPP was trialling the support of FHIR resources in Dorset, and so we are hoping that migrating to NHS Digital's Transfer of Care spec and ITK3 FHIR resource profiles will resolve the aforementioned issues and, if not, at least future proof us for the eventual full migration to the HL7 FHIR standards.
+Multiple Dorset-based GP practices have reported one or more of these issues since 2018-10-09.
+Attempts to rectify this on YDH's end proved unsuccessful and so this was raised with Phil Mabey, Steve Howes, and Andy Hadley at [Dorset CCG](https://www.dorsetccg.nhs.uk/) on 2020-06-19 for them to raise with TPP.
+At the time of writing (2021-10-25), this has still not been resolved.
+
+It was [noticed in an article in Digital Health](https://www.digitalhealth.net/2020/08/clinical-patient-discharge-summaries-soon-to-be-sent-electronically-to-gps/) that TPP was trialling the support of FHIR resources in Dorset. We are hoping that migrating to NHS Digital's Transfer of Care spec and ITK3 FHIR resource profiles will resolve the aforementioned issues and, if not, at least future proof us for the eventual full migration to the HL7 FHIR standards.
 
 ## License
 
