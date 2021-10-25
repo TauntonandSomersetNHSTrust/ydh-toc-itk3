@@ -64,8 +64,8 @@ What was sent to a Dorset-based GP practice:
 
 <img alttext="A document printed from TPP's SystmOne, with content present" src="https://raw.githubusercontent.com/Fdawgs/ydh-toc-itk3/master/docs/images/example_missing_content_1_1.png" width="480">
 
-How the document was saved and presented as by TPP's SystmOne, note the missing text **clopidogrel 75mg film coated tablets -
-Oral**:
+How the document was saved and presented as by TPP's SystmOne, note the missing text **'clopidogrel 75mg film coated tablets -
+Oral'**:
 
 <img alttext="A document printed from TPP's SystmOne, with content missing" src="https://raw.githubusercontent.com/Fdawgs/ydh-toc-itk3/master/docs/images/example_missing_content_1_2.png" width="480">
 
