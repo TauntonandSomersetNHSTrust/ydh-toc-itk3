@@ -2,11 +2,11 @@
 	<img alttext="Yeovil District Hospital Logo" src="https://github.com/Fdawgs/ydh-logos/raw/HEAD/images/ydh-full-logo-transparent-background.svg" width="480" />
 </a>
 
-# Yeovil District Hospital NHS Foundation Trust - Migrating to Transfer of Care and ITK3 FHIR messages
+# Yeovil District Hospital NHS Foundation Trust - Migrating to ITK3 Transfer of Care FHIR messages
 
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat)](https://github.com/prettier/prettier)
 
-> Yeovil District Hospital NHSFT's Transfer Of Care and ITK3 Migration Work Logs
+> Yeovil District Hospital NHSFT's ITK3 Transfer Of Care Migration Work Logs
 
 ## Intro
 
