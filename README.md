@@ -77,7 +77,7 @@ Luckily the practice pharmacist noticed it and raised this with us.
 
 The [ITK3 specification](https://digital.nhs.uk/services/interoperability-toolkit/developer-resources/itk3-test-harness/itk3-messaging-distribution-specification-versions) defines the structure and components of a FHIR resource bundle, but not the payload.
 
-The [Transfer of Care specification](https://digital.nhs.uk/services/interoperability-toolkit/developer-resources/transfer-of-care-specification-versions) defines FHIR resources that can be sent inside ITK3 structured bundles, such as eDocuments.
+The [Transfer of Care (ToC) specification](https://digital.nhs.uk/services/interoperability-toolkit/developer-resources/transfer-of-care-specification-versions) defines FHIR resources that can be sent inside ITK3 structured bundles, such as eDocuments.
 
 YDH will be looking at utilising the following Transfer of Care FHIR resources:
 
@@ -91,16 +91,28 @@ The ITK3 Transfer of Care FHIR resource bundles will need to be sent to GP surge
 
 YDH currently uses the [Java-based MESH client](https://digital.nhs.uk/services/message-exchange-for-social-care-and-health-mesh/compare-mesh-services), which utilises `.dat` and `.ctl` Kettering XML files, however NHS Digital also provides a [web-based RESTful API](https://digital.nhs.uk/developer/api-catalogue/message-exchange-for-social-care-and-health-api).
 
-[Documentation on how to send ITK3 FHIR resource bundles via MESH](https://developer.nhs.uk/apis/itk3messagedistribution-2-9-0/mesh.html) is non-existent, and NHS Digital has been contacted (on 2021-11-15) to clarify on the following queries:
+[Documentation on how to send ITK3 FHIR resource bundles via MESH](https://developer.nhs.uk/apis/itk3messagedistribution-2-9-0/mesh.html) is sparse, and NHS Digital was contacted on 2021-11-15 to clarify on the following queries:
 
 -   Whether the web-based RESTful API is required for sending FHIR payloads, or if the Java-based client can be used
 -   What content-types the API POST endpoints can accept, as ideally this would be sent as `application/json`
 
+The NHS Digital ITOC team responded on 2021-11-16 stating that FHIR payloads can be sent by either methods, and that any type can be POSTed at the API endpoints.
+Whilst it would be easy to stay with the Java-based MESH client, for the sake of posterity the web-based RESTful API will be adopted.
+
 ### Supplier Support
+
+Mike Moore, the ToC Project Manager at NHS Digital, was contacted on 2021-11-15 regarding supplier support, and provided the following details:
 
 #### EMIS
 
+EMIS Health need to deliver Emis Web v9.13.11 to fix a workflow annotation issue before Full Rollout Approval (FRA) can be granted.
+The target for FRA or EMIS is 2021-12-22, however this may be delayed due to holidays.
+Post FRA, all of the GP practices using EMIS will need their MESH mailboxes reconfigured ot send and recieve ToC FHIR messages, and this is expected to be completed by 2022-02.
+
 #### TPP's SystmOne
+
+TPP's SystmOne gained FRA in 2020-08 for inpatient, emergency, and outpatient ToC FHIR resources.
+They are expected to gain FRA for Mental Health Discharge ToC FHIR resources on 2021-11-17.
 
 ## License
 
