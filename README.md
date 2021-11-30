@@ -12,7 +12,7 @@
 
 ### Purpose
 
-This repo outlines the steps that have been taken to migrate from Kettering XML to NHS Digital's [Transfer of Care](https://digital.nhs.uk/services/interoperability-toolkit/developer-resources/transfer-of-care-specification-versions) specification and [ITK3](https://digital.nhs.uk/services/interoperability-toolkit/developer-resources/itk3-test-harness/itk3-messaging-distribution-specification-versions) FHIR resource components for sending clinical documents via [MESH](https://digital.nhs.uk/services/message-exchange-for-social-care-and-health-mesh).
+This repo outlines the steps that have been taken to migrate from Kettering XML to NHS Digital's [ITK3](https://digital.nhs.uk/services/interoperability-toolkit/developer-resources/itk3-test-harness/itk3-messaging-distribution-specification-versions) [Transfer of Care](https://digital.nhs.uk/services/interoperability-toolkit/developer-resources/transfer-of-care-specification-versions) FHIR resource bundles for sending clinical documents via [MESH](https://digital.nhs.uk/services/message-exchange-for-social-care-and-health-mesh).
 
 ### Background
 
@@ -40,7 +40,7 @@ Multiple Dorset-based GP practices have reported one or more of these issues sin
 Attempts to rectify this on YDH's end proved unsuccessful and so this was raised with Phil Mabey, Steve Howes, and Andy Hadley at [Dorset CCG](https://www.dorsetccg.nhs.uk/) on 2020-06-19 for them to raise with TPP.
 At the time of writing (2021-10-25), this has still not been resolved.
 
-It was [noticed in an article in Digital Health](https://www.digitalhealth.net/2020/08/clinical-patient-discharge-summaries-soon-to-be-sent-electronically-to-gps/) that TPP was trialling the support of FHIR resources in Dorset. We are hoping that migrating to NHS Digital's Transfer of Care spec and ITK3 FHIR resource profiles will resolve the aforementioned issues and, if not, at least future proof us for the eventual full migration to the HL7 FHIR standards.
+It was [noticed in an article in Digital Health](https://www.digitalhealth.net/2020/08/clinical-patient-discharge-summaries-soon-to-be-sent-electronically-to-gps/) that TPP was trialling the support of FHIR resources in Dorset. We are hoping that migrating to NHS Digital's ITK3 Transfer of Care FHIR resource bundles will resolve the aforementioned issues and, if not, at least future proof us for the eventual full migration to the HL7 FHIR standards.
 
 #### Overlapping Paragraph Examples
 
@@ -113,6 +113,16 @@ Post FRA, all of the GP practices using EMIS will need their MESH mailboxes reco
 
 TPP's SystmOne gained FRA in 2020-08 for inpatient, emergency, and outpatient ToC FHIR resources.
 They are expected to gain FRA for Mental Health Discharge ToC FHIR resources on 2021-11-17.
+
+### Issues With Migration From Current Processes
+
+At present, YDH's documents are generated from supplier systems as unstructured PDFs.
+
+The hope was that PDFs could be placed into Binary resources inside of the ITK3 structured bundles, however, this is [not allowed](https://developer.nhs.uk/apis/itk3tocedischarge-2-9-0/explore_document_profiles.html) (see Note 1). Instead, they would have to be converted from PDF to HTML, and the resulting markup would need to be parsed to fit into the sections of an [ITK Composition resource](https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-EDIS-Composition-1).
+
+Our neighbouring trust, [Somerset NHS Foundation Trust](https://www.somersetft.nhs.uk/) (SFT), is also looking to adopt ITK ToC FHIR bundles but will run into a similar issue as their documents are also unstructured as DOCX files.
+
+[Dorset County Hospital NHS Foundation Trust](https://www.dchft.nhs.uk/) (DCH), an early adopter of ITK3 Toc FHIR bundles, was approached on 2021-11-22 to see if they could advise both YDH and SFT on how they achieved adoption. Unfortunately, DCH does not have an in-house development team and is solely dependent on contractors and suppliers, who were unwilling to share due to it being achieved with proprietary solutions.
 
 ## License
 
