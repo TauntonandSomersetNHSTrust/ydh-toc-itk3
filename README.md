@@ -120,7 +120,7 @@ At present, YDH's documents are generated from supplier systems (Intersystems' T
 
 The hope was that PDFs could be placed into Binary resources inside of the ITK3 structured bundles, however, this is [not allowed](https://developer.nhs.uk/apis/itk3tocedischarge-2-9-0/explore_document_profiles.html) (see Note 1). Instead, they would have to be converted from PDF to HTML, and the resulting markup would need to be parsed to fit into the sections of an [ITK Composition resource](https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-EDIS-Composition-1).
 
-Our neighbouring trust, [Somerset NHS Foundation Trust](https://www.somersetft.nhs.uk/) (SFT), is also looking to adopt ITK ToC FHIR bundles but will run into a similar issue as their documents are also generated from supplier systems (epro) as unstructured as DOCX files.
+Our neighbouring trust, [Somerset NHS Foundation Trust](https://www.somersetft.nhs.uk/) (SFT), is also looking to adopt ITK ToC FHIR bundles but will run into a similar issue as their documents are also generated from supplier systems (epro) as unstructured DOCX files.
 
 ### Approaching Early Adopters
 
