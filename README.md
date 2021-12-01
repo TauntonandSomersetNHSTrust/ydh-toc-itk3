@@ -125,11 +125,10 @@ Our neighbouring trust, [Somerset NHS Foundation Trust](https://www.somersetft.n
 ### Approaching Early Adopters
 
 [Dorset County Hospital NHS Foundation Trust](https://www.dchft.nhs.uk/) (DCH), an early adopter of ITK3 Toc FHIR bundles, was approached on 2021-11-22 to see if they could advise both YDH and SFT on how they achieved adoption. Unfortunately, DCH does not have an in-house development team and is solely dependent on contractors and suppliers, who were unwilling to share due to it being achieved with proprietary solutions.
-[Devon Partnership NHS Trust](https://www.dpt.nhs.uk/) (DPT) also does not have an in-house development team, and is also dependent on contractors and suppliers.
 
-[Cambridge University Hospitals NHS Foundation Trust](https://www.cuh.nhs.uk/), [Leeds Teaching Hospitals NHS Trust](https://www.leedsth.nhs.uk/), and [Oxford University Hospitals NHS Foundation Trust](https://www.ouh.nhs.uk/) are working with suppliers for their ToC implementation.
+[Devon Partnership NHS Trust](https://www.dpt.nhs.uk/) (DPT), [Cambridge University Hospitals NHS Foundation Trust](https://www.cuh.nhs.uk/) (CUH), [Leeds Teaching Hospitals NHS Trust](https://www.leedsth.nhs.uk/) (LTH), and [Oxford University Hospitals NHS Foundation Trust](https://www.ouh.nhs.uk/) (OUH) are working with suppliers for their ToC implementation.
 
-[Essex Partnership University NHS Foundation Trust](https://eput.nhs.uk/) are attempting to build in-house and are open to discussing their plans.
+[Essex Partnership University NHS Foundation Trust](https://eput.nhs.uk/) (EPUT) have built in-house and are open to discussing their plans.
 
 ## License
 
