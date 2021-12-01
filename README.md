@@ -112,7 +112,7 @@ Post FRA, all of the GP practices using EMIS will need their MESH mailboxes reco
 #### TPP's SystmOne
 
 TPP's SystmOne gained FRA in 2020-08 for inpatient, emergency, and outpatient ToC FHIR resources.
-They are expected to gain FRA for Mental Health Discharge ToC FHIR resources on 2021-11-17.
+Mike Moore approved FRA for Mental Health Discharge ToC FHIR resources on 2021-11-17.
 
 ### Issues With Migration From Current Processes
 
@@ -122,7 +122,14 @@ The hope was that PDFs could be placed into Binary resources inside of the ITK3 
 
 Our neighbouring trust, [Somerset NHS Foundation Trust](https://www.somersetft.nhs.uk/) (SFT), is also looking to adopt ITK ToC FHIR bundles but will run into a similar issue as their documents are also unstructured as DOCX files.
 
+### Approaching Early Adopters
+
 [Dorset County Hospital NHS Foundation Trust](https://www.dchft.nhs.uk/) (DCH), an early adopter of ITK3 Toc FHIR bundles, was approached on 2021-11-22 to see if they could advise both YDH and SFT on how they achieved adoption. Unfortunately, DCH does not have an in-house development team and is solely dependent on contractors and suppliers, who were unwilling to share due to it being achieved with proprietary solutions.
+[Devon Partnership NHS Trust](https://www.dpt.nhs.uk/) (DPT) also does not have an in-house development team, and is also dependent on contractors and suppliers.
+
+[Cambridge University Hospitals NHS Foundation Trust](https://www.cuh.nhs.uk/), [Leeds Teaching Hospitals NHS Trust](https://www.leedsth.nhs.uk/), and [Oxford University Hospitals NHS Foundation Trust](https://www.ouh.nhs.uk/) are working with suppliers for their ToC implementation.
+
+[Essex Partnership University NHS Foundation Trust](https://eput.nhs.uk/) are attempting to build in-house and are open to discussing their plans.
 
 ## License
 
