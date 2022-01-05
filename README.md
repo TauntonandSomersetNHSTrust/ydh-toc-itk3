@@ -128,7 +128,8 @@ Our neighbouring trust, [Somerset NHS Foundation Trust](https://www.somersetft.n
 
 [Devon Partnership NHS Trust](https://www.dpt.nhs.uk/) (DPT), [Cambridge University Hospitals NHS Foundation Trust](https://www.cuh.nhs.uk/) (CUH), [Leeds Teaching Hospitals NHS Trust](https://www.leedsth.nhs.uk/) (LTH), and [Oxford University Hospitals NHS Foundation Trust](https://www.ouh.nhs.uk/) (OUH) are working with suppliers for their ToC implementation.
 
-[Essex Partnership University NHS Foundation Trust](https://eput.nhs.uk/) (EPUT) have built in-house and are open to discussing their plans.
+[Essex Partnership University NHS Foundation Trust](https://eput.nhs.uk/) (EPUT) have built in-house and were happy to discuss their progress. On 2021-12-02 Marc Riding and George Fox from EPUT talked through their development over MS Teams, showing their Mental Health Discharge Summary ToC FHIR Bundle generation process.
+Marc shared the code they had developed alongside supporting documentation.
 
 ## License
 
