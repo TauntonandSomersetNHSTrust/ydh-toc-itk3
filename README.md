@@ -131,6 +131,8 @@ Our neighbouring trust, [Somerset NHS Foundation Trust](https://www.somersetft.n
 [Essex Partnership University NHS Foundation Trust](https://eput.nhs.uk/) (EPUT) have built in-house and were happy to discuss their progress. On 2021-12-02 Marc Riding and George Fox from EPUT talked through their development over MS Teams, showing their Mental Health Discharge Summary ToC FHIR Bundle generation process.
 Marc shared the code they had developed alongside supporting documentation.
 
+[Northumbria Healthcare NHS Foundation Trust](https://www.northumbria.nhs.uk/) (NH) have also built in-house and, on 2022-01-18, Richard Leonard and Christopher Rouse talked through their development over MS Teams. NH have used the [Java-based MESH client](https://digital.nhs.uk/services/message-exchange-for-social-care-and-health-mesh/compare-mesh-services), which utilises `.dat` and `.ctl` Kettering XML files, for sending Transfer of Care documents, and shared their process.
+
 ## License
 
 `ydh-toc-itk3` is licensed under the [MIT](./LICENSE) license.
