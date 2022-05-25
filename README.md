@@ -38,7 +38,7 @@ This all impacts patient care, with the issue of missing content being the most 
 
 Multiple Dorset-based GP practices have reported one or more of these issues since 2018-10-09.
 Attempts to rectify this on YDH's end proved unsuccessful and so this was raised with Phil Mabey, Steve Howes, and Andy Hadley at [Dorset CCG](https://www.dorsetccg.nhs.uk/) on 2020-06-19 for them to raise with TPP.
-At the time of writing (2021-10-25), this has still not been resolved.
+At the time of writing (2022-05-25), this has still not been resolved.
 
 It was [noticed in an article in Digital Health](https://www.digitalhealth.net/2020/08/clinical-patient-discharge-summaries-soon-to-be-sent-electronically-to-gps/) that TPP was trialling the support of FHIR resources in Dorset. We are hoping that migrating to NHS Digital's ITK3 Transfer of Care FHIR resource bundles will resolve the aforementioned issues and, if not, at least future proof us for the eventual full migration to the HL7 FHIR standards.
 
