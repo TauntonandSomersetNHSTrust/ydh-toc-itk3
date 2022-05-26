@@ -30,9 +30,9 @@ EMIS has no issue receiving these documents as HTML and presenting them in their
 
 SystmOne however, strips a large amount of the HTML elements out (including all `<img>` elements) and then saves the documents as `.tif` files, which have led to several issues, including:
 
--   Paragraphs overlapping each other, leading to unreadable documents
--   All images removed from documents (cannot send scan results)
--   The bottom third of each page is missing, and all the content with it
+-   [Paragraphs overlapping each other, leading to unreadable documents](#overlapping-paragraph-examples)
+-   [All images removed from documents](#removed-images-examples) (cannot send scan results)
+-   The bottom third of each page is missing, and [all the content with it](#missing-content-examples)
 
 This all impacts patient care, with the issue of missing content being the most severe.
 
@@ -101,13 +101,13 @@ Whilst it would be easy to stay with the Java-based MESH client, for the sake of
 
 ### Supplier Support
 
-Mike Moore, the ToC Project Manager at NHS Digital, was contacted on 2021-11-15 regarding supplier support, and provided the following details:
+Dr. Mike Moore, the ToC Project Manager at NHS Digital, was contacted on 2021-11-15 regarding supplier support, and provided the following details:
 
 #### EMIS
 
 EMIS Health need to deliver Emis Web v9.13.11 to fix a workflow annotation issue before Full Rollout Approval (FRA) can be granted.
 The target for FRA or EMIS is 2021-12-22, however this may be delayed due to holidays.
-Post FRA, all of the GP practices using EMIS will need their MESH mailboxes reconfigured ot send and recieve ToC FHIR messages, and this is expected to be completed by 2022-02.
+Post FRA, all of the GP practices using EMIS will need their MESH mailboxes reconfigured ot send and recieve ToC FHIR messages. This was completed on 2022-01-07.
 
 #### TPP's SystmOne
 
