@@ -135,4 +135,4 @@ Marc shared the code they had developed alongside supporting documentation.
 
 ## License
 
-`ydh-toc-itk3` is licensed under the [MIT](./LICENSE) license.
+`ydh-toc-itk3` is licensed under the [Open Government Licence v3.0](./LICENSE) license.
