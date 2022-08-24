@@ -147,20 +147,26 @@ The ITOC team responded on 2022-08-10, directing us to the [Connect to a Path to
 
 From reviewing both pages, it appears that we need to request a test organisation and test mailbox prior to gaining access to the test APIs.
 
-### Requesting a Test Organisation
-
 The [Connect to a Path to Live environment](https://digital.nhs.uk/services/path-to-live-environments/connect-to-a-path-to-live-environment) page and adjacent [Development Environments](https://digital.nhs.uk/services/path-to-live-environments/development-environment) page state the need for a test organisation, so a test organisation was requested on 2022-08-10. The Test Data team responded on 2022-08-16 with a test organisation (B81008: DR KS TOMMINS' PRACTICE).
 
-### Requesting a Test Mailbox
+A test MESH mailbox was requested via the web form for both RA4 (YDHNSFT) and B81008 (test organisation) on 2022-08-24.
 
-From reviewing the [Message Exchange for Social Care and Health (MESH) API Onboarding section](https://digital.nhs.uk/developer/api-catalogue/message-exchange-for-social-care-and-health-api#api-description__onboarding), the test organisation is not required when [requesting a test MESH mailbox](https://digital.nhs.uk/services/message-exchange-for-social-care-and-health-mesh/messaging-exchange-for-social-care-and-health-apply-for-a-mailbox). The test organisation may still be of use in the future.
+#### Steps
 
-A test MESH mailbox was requested via the web form on 2022-08-24 for the following Transfer of Care (FHIR) [MESH workflows](https://digital.nhs.uk/services/message-exchange-for-social-care-and-health-mesh/workflow-groups-and-workflow-ids):
-
--   TOC_FHIR_EC_DISCH (EC Discharge Summary A and E Report)
--   TOC_FHIR_IP_DISCH (Acute IP and Daycase Discharge)
--   TOC_FHIR_MH_DISCH (MH IP and Daycase Mental Health Inpatient Discharge Summaries)
--   TOC_FHIR_OP_ATTEN (Outpatient Clinic Letter - Outpatient Attendance)
+1. Request test organisation to send test messages at from testdata@nhs.net
+1. Fill in Excel spreadsheet sent by testdata@nhs.net and return
+1. Await test organisation creation (B81008) by NHS Digital's Test Data team, and corresponding email
+1. [Request test MESH mailbox](https://digital.nhs.uk/services/message-exchange-for-social-care-and-health-mesh/messaging-exchange-for-social-care-and-health-apply-for-a-mailbox) for live organisation (RA4), with the following Transfer of Care (FHIR) [workflow IDs](https://digital.nhs.uk/services/message-exchange-for-social-care-and-health-mesh/workflow-groups-and-workflow-ids):
+    - TOC_FHIR_EC_DISCH (EC Discharge Summary A and E Report)
+    - TOC_FHIR_IP_DISCH (Acute IP and Daycase Discharge)
+    - TOC_FHIR_MH_DISCH (MH IP and Daycase Mental Health Inpatient Discharge Summaries)
+    - TOC_FHIR_OP_ATTEN (Outpatient Clinic Letter - Outpatient Attendance)
+1. [Request test MESH mailbox](https://digital.nhs.uk/services/message-exchange-for-social-care-and-health-mesh/messaging-exchange-for-social-care-and-health-apply-for-a-mailbox) for the test organisation (B81008), with the following Transfer of Care (FHIR) [workflow IDs](https://digital.nhs.uk/services/message-exchange-for-social-care-and-health-mesh/workflow-groups-and-workflow-ids):
+    - TOC_FHIR_EC_DISCH_ACK
+    - TOC_FHIR_IP_DISCH_ACK
+    - TOC_FHIR_MH_DISCH_ACK
+    - TOC_FHIR_OP_ATTEN_ACK
+1. [Register FQDN](https://digital.nhs.uk/services/path-to-live-environments/path-to-live-forms#register-or-modify-your-fqdn-with-the-nhs-dns-service) for test (`local_id`.B81008.api.mesh-client.nhs.uk) and live (`local_id`.RA4.api.mesh-client.nhs.uk) organisation MESH mailboxes
 
 ## License
 
