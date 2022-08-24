@@ -96,7 +96,7 @@ YDH currently uses the [Java-based MESH client](https://digital.nhs.uk/services/
 -   Whether the web-based RESTful API is required for sending FHIR payloads, or if the Java-based client can be used
 -   What content-types the API POST endpoints can accept, as ideally this would be sent as `application/json`
 
-The [NHS Digital ITOC team](itoc.supportdesk@nhs.net) responded on 2021-11-16 stating that FHIR payloads can be sent by either methods, and that any type can be POSTed at the API endpoints.
+The NHS Digital ITOC team (itoc.supportdesk@nhs.net) responded on 2021-11-16 stating that FHIR payloads can be sent by either methods, and that any type can be POSTed at the API endpoints.
 Whilst it would be easy to stay with the Java-based MESH client, for the sake of posterity the web-based RESTful API will be adopted.
 
 ### Supplier Support
@@ -133,17 +133,19 @@ Marc shared the code they had developed alongside supporting documentation.
 
 [Northumbria Healthcare NHS Foundation Trust](https://www.northumbria.nhs.uk/) (NH) have also built in-house and, on 2022-01-18, Richard Leonard and Christopher Rouse talked through their development over MS Teams. NH have used the [Java-based MESH client](https://digital.nhs.uk/services/message-exchange-for-social-care-and-health-mesh/compare-mesh-services), which utilises `.dat` and `.ctl` Kettering XML files, for sending Transfer of Care documents, and shared their process.
 
-## Gaining Access to the MESH REST API
+## Accessing the MESH REST API
 
 ### Accessing the Development/Test APIs
 
 As noted in the requirements section above, NHS Digital's documentation regarding MESH adoption is confusing.
 
-NHS Digital's [ITOC team](itoc.supportdesk@nhs.net) and [API Management team](api.management@nhs.net) were contacted on 2022-07-21 in the hope they could clarify what we need to do to access the test MESH APIs.
+NHS Digital's ITOC team (itoc.supportdesk@nhs.net) and API Management team (api.management@nhs.net) were contacted on 2022-07-21 in the hope they could clarify what we need to do to access the test MESH APIs.
 
 The API Management team responded on 2022-08-03, pointing us to the [Message Exchange for Social Care and Health (MESH) API](https://digital.nhs.uk/developer/api-catalogue/message-exchange-for-social-care-and-health-api) page that we had already been looking at.
 
 The ITOC team responded on 2022-08-10, directing us to the [Connect to a Path to Live environment](https://digital.nhs.uk/services/path-to-live-environments/connect-to-a-path-to-live-environment) page.
+
+From reviewing both pages, it appears that we need to request a test organisation and test mailbox prior to gaining access to the test APIs.
 
 ### Requesting a Test Organisation
 
@@ -151,7 +153,7 @@ The [Connect to a Path to Live environment](https://digital.nhs.uk/services/path
 
 ### Requesting a Test Mailbox
 
-However, from reviewing the [Message Exchange for Social Care and Health (MESH) API Onboarding section](https://digital.nhs.uk/developer/api-catalogue/message-exchange-for-social-care-and-health-api#api-description__onboarding), the test organisation is not required when [requesting a test MESH mailbox](https://digital.nhs.uk/services/message-exchange-for-social-care-and-health-mesh/messaging-exchange-for-social-care-and-health-apply-for-a-mailbox). The test organisation may still be of use in the future.
+From reviewing the [Message Exchange for Social Care and Health (MESH) API Onboarding section](https://digital.nhs.uk/developer/api-catalogue/message-exchange-for-social-care-and-health-api#api-description__onboarding), the test organisation is not required when [requesting a test MESH mailbox](https://digital.nhs.uk/services/message-exchange-for-social-care-and-health-mesh/messaging-exchange-for-social-care-and-health-apply-for-a-mailbox). The test organisation may still be of use in the future.
 
 A test MESH mailbox was requested via the web form on 2022-08-24 for the following Transfer of Care (FHIR) [MESH workflows](https://digital.nhs.uk/services/message-exchange-for-social-care-and-health-mesh/workflow-groups-and-workflow-ids):
 
