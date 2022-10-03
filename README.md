@@ -37,10 +37,10 @@ SystmOne however, strips a large amount of the HTML elements out (including all 
 This all impacts patient care, with the issue of missing content being the most severe.
 
 Multiple Dorset-based GP practices have reported one or more of these issues since 2018-10-09.
-Attempts to rectify this on YDH's end proved unsuccessful and so this was raised with Phil Mabey, Steve Howes, and Andy Hadley at [Dorset CCG](https://www.dorsetccg.nhs.uk/) on 2020-06-19 for them to raise with TPP.
+Attempts to rectify this on YDH's end proved unsuccessful and so this was raised with Phil Mabey, Steve Howes, and Andy Hadley at [Dorset CCG](https://dorsetccg.nhs.uk/) on 2020-06-19 for them to raise with TPP.
 At the time of writing (2022-05-25), this has still not been resolved.
 
-It was [noticed in an article in Digital Health](https://www.digitalhealth.net/2020/08/clinical-patient-discharge-summaries-soon-to-be-sent-electronically-to-gps/) that TPP was trialling the support of FHIR resources in Dorset. We are hoping that migrating to NHS Digital's ITK3 Transfer of Care FHIR resource bundles will resolve the aforementioned issues and, if not, at least future proof us for the eventual full migration to the HL7 FHIR standards.
+It was [noticed in an article in Digital Health](https://digitalhealth.net/2020/08/clinical-patient-discharge-summaries-soon-to-be-sent-electronically-to-gps/) that TPP was trialling the support of FHIR resources in Dorset. We are hoping that migrating to NHS Digital's ITK3 Transfer of Care FHIR resource bundles will resolve the aforementioned issues and, if not, at least future proof us for the eventual full migration to the HL7 FHIR standards.
 
 #### Overlapping Paragraph Examples
 
@@ -120,18 +120,18 @@ At present, YDH's documents are generated from supplier systems (Intersystems' T
 
 The hope was that PDFs could be placed into Binary resources inside of the ITK3 structured bundles, however, this is [not allowed](https://developer.nhs.uk/apis/itk3tocedischarge-2-9-0/explore_document_profiles.html) (see Note 1). Instead, they would have to be converted from PDF to HTML, and the resulting markup would need to be parsed to fit into the sections of an [ITK Composition resource](https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-EDIS-Composition-1).
 
-Our neighbouring trust, [Somerset NHS Foundation Trust](https://www.somersetft.nhs.uk/) (SFT), is also looking to adopt ITK ToC FHIR bundles but will run into a similar issue as their documents are also generated from supplier systems (epro) as unstructured DOCX files.
+Our neighbouring trust, [Somerset NHS Foundation Trust](https://somersetft.nhs.uk/) (SFT), is also looking to adopt ITK ToC FHIR bundles but will run into a similar issue as their documents are also generated from supplier systems (epro) as unstructured DOCX files.
 
 ### Approaching Early Adopters
 
 [Dorset County Hospital NHS Foundation Trust](https://www.dchft.nhs.uk/) (DCH), an early adopter of ITK3 Toc FHIR bundles, was approached on 2021-11-22 to see if they could advise both YDH and SFT on how they achieved adoption. Unfortunately, DCH does not have an in-house development team and is solely dependent on contractors and suppliers, who were unwilling to share due to it being achieved with proprietary solutions.
 
-[Devon Partnership NHS Trust](https://www.dpt.nhs.uk/) (DPT), [Cambridge University Hospitals NHS Foundation Trust](https://www.cuh.nhs.uk/) (CUH), [Leeds Teaching Hospitals NHS Trust](https://www.leedsth.nhs.uk/) (LTH), and [Oxford University Hospitals NHS Foundation Trust](https://www.ouh.nhs.uk/) (OUH) are working with suppliers for their ToC implementation.
+[Devon Partnership NHS Trust](https://dpt.nhs.uk/) (DPT), [Cambridge University Hospitals NHS Foundation Trust](https://cuh.nhs.uk/) (CUH), [Leeds Teaching Hospitals NHS Trust](https://www.leedsth.nhs.uk/) (LTH), and [Oxford University Hospitals NHS Foundation Trust](https://ouh.nhs.uk/) (OUH) are working with suppliers for their ToC implementation.
 
 [Essex Partnership University NHS Foundation Trust](https://eput.nhs.uk/) (EPUT) have built in-house and were happy to discuss their progress. On 2021-12-02 Marc Riding and George Fox from EPUT talked through their development over MS Teams, showing their Mental Health Discharge Summary ToC FHIR Bundle generation process.
 Marc shared the code they had developed alongside supporting documentation.
 
-[Northumbria Healthcare NHS Foundation Trust](https://www.northumbria.nhs.uk/) (NH) have also built in-house and, on 2022-01-18, Richard Leonard and Christopher Rouse talked through their development over MS Teams. NH have used the [Java-based MESH client](https://digital.nhs.uk/services/message-exchange-for-social-care-and-health-mesh/compare-mesh-services), which utilises `.dat` and `.ctl` Kettering XML files, for sending Transfer of Care documents, and shared their process.
+[Northumbria Healthcare NHS Foundation Trust](https://northumbria.nhs.uk/) (NH) have also built in-house and, on 2022-01-18, Richard Leonard and Christopher Rouse talked through their development over MS Teams. NH have used the [Java-based MESH client](https://digital.nhs.uk/services/message-exchange-for-social-care-and-health-mesh/compare-mesh-services), which utilises `.dat` and `.ctl` Kettering XML files, for sending Transfer of Care documents, and shared their process.
 
 ## Accessing the MESH REST API
 
