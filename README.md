@@ -1,6 +1,6 @@
 > **Note**
 > Development of this repository has been discontinued as of 2022-11-01.
-> [Yeovil District Hospital NHS Foundation Trust](https://yeovilhospital.co.uk/) (YDH) and [Somerset NHS Foundation Trust](https://somersetft.nhs.uk/) (SFT) are due to merge in 2023, and the CCIO of the new trust has decided that a proprietary solution from a third-party supplier should be procured instead of building an open-source solution in-house.
+> [Yeovil District Hospital NHS Foundation Trust](https://yeovilhospital.co.uk/) (YDH) and [Somerset NHS Foundation Trust](https://somersetft.nhs.uk/) (SFT) are due to merge in 2023, and a deputy CCIO of the new trust has decided that a proprietary solution from a third-party supplier should be procured instead of building an open-source solution in-house.
 
 <a href="https://yeovilhospital.co.uk/">
 	<img alttext="Yeovil District Hospital Logo" src="https://github.com/Fdawgs/ydh-logos/raw/HEAD/images/ydh-full-logo-transparent-background.svg" width="480" />
@@ -68,7 +68,7 @@ What was sent to a Dorset-based GP practice:
 
 <img alttext="A document printed from TPP's SystmOne, with content present" src="https://raw.githubusercontent.com/Fdawgs/ydh-toc-itk3/master/docs/images/example_missing_content_1_1.png" width="480">
 
-How the document was saved and presented as by TPP's SystmOne, note the missing text **'clopidogrel 75mg film coated tablets -
+How the document was saved and presented by TPP's SystmOne, note the missing text **'clopidogrel 75mg film coated tablets -
 Oral'**:
 
 <img alttext="A document printed from TPP's SystmOne, with content missing" src="https://raw.githubusercontent.com/Fdawgs/ydh-toc-itk3/master/docs/images/example_missing_content_1_2.png" width="480">
