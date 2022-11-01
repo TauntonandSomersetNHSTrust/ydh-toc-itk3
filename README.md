@@ -1,3 +1,7 @@
+> **Note**
+> Development of this repository has been discontinued as of 2022-11-01.
+> [Yeovil District Hospital NHS Foundation Trust](https://yeovilhospital.co.uk/) (YDH) and [Somerset NHS Foundation Trust](https://somersetft.nhs.uk/) (SFT) are due to merge in 2023, and the CCIO of the new trust has decided that a proprietary solution from a third-party supplier should be procured instead of building an open-source solution in-house.
+
 <a href="https://yeovilhospital.co.uk/">
 	<img alttext="Yeovil District Hospital Logo" src="https://github.com/Fdawgs/ydh-logos/raw/HEAD/images/ydh-full-logo-transparent-background.svg" width="480" />
 </a>
