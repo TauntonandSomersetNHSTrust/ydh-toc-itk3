@@ -28,7 +28,7 @@ Dorset GP Practices use [TPP's SystmOne](https://tpp-uk.com/products/), whilst S
 
 EMIS has no issue receiving these documents as HTML and presenting them in their system.
 
-SystmOne however, strips a large amount of the HTML elements out (including all `<img>` elements) and then saves the documents as `.tif` files, which have led to several issues, including:
+SystmOne however, strips a large amount of the HTML elements out (including all `<img>` elements) and then saves the documents as `.tif` files, which has led to several issues, including:
 
 -   [Paragraphs overlapping each other, leading to unreadable documents](#overlapping-paragraph-examples)
 -   [All images removed from documents](#removed-images-examples) (cannot send scan results)
@@ -40,7 +40,7 @@ Multiple Dorset-based GP practices have reported one or more of these issues sin
 Attempts to rectify this on YDH's end proved unsuccessful and so this was raised with Phil Mabey, Steve Howes, and Andy Hadley at [Dorset CCG](https://dorsetccg.nhs.uk/) on 2020-06-19 for them to raise with TPP.
 At the time of writing (2022-05-25), this has still not been resolved.
 
-It was [noticed in an article in Digital Health](https://digitalhealth.net/2020/08/clinical-patient-discharge-summaries-soon-to-be-sent-electronically-to-gps/) that TPP was trialling the support of FHIR resources in Dorset. We are hoping that migrating to NHS Digital's ITK3 Transfer of Care FHIR resource bundles will resolve the aforementioned issues and, if not, at least future proof us for the eventual full migration to the HL7 FHIR standards.
+It was [noticed in an article in Digital Health](https://digitalhealth.net/2020/08/clinical-patient-discharge-summaries-soon-to-be-sent-electronically-to-gps/) that TPP was trialling the support of FHIR resources in Dorset. We are hoping that migrating to NHS Digital's ITK3 Transfer of Care FHIR resource bundles will resolve the aforementioned issues and, if not, at least future-proof us for the eventual full migration to the HL7 FHIR standards.
 
 #### Overlapping Paragraph Examples
 
@@ -54,7 +54,7 @@ What was sent to a Dorset-based GP practice:
 
 <img alttext="A document generated at YDH, with the hospital logo present" src="https://raw.githubusercontent.com/Fdawgs/ydh-toc-itk3/master/docs/images/example_missing_image_1_1.png" width="480">
 
-How the document was saved and presented as by TPP's SystmOne, note the missing hospital logo:
+How the document was saved and presented by TPP's SystmOne, note the missing hospital logo:
 
 <img alttext="A document printed from TPP's SystmOne, with the hospital logo missing" src="https://raw.githubusercontent.com/Fdawgs/ydh-toc-itk3/master/docs/images/example_missing_image_1_2.png" width="480">
 
@@ -89,14 +89,14 @@ YDH will be looking at utilising the following Transfer of Care FHIR resources:
 
 The ITK3 Transfer of Care FHIR resource bundles will need to be sent to GP surgeries in Somerset and Dorset, as well as other NHS trusts, via [MESH](https://digital.nhs.uk/services/message-exchange-for-social-care-and-health-mesh).
 
-YDH currently uses the [Java-based MESH client](https://digital.nhs.uk/services/message-exchange-for-social-care-and-health-mesh/compare-mesh-services), which utilises `.dat` and `.ctl` Kettering XML files, however NHS Digital also provides a [web-based RESTful API](https://digital.nhs.uk/developer/api-catalogue/message-exchange-for-social-care-and-health-api).
+YDH currently uses the [Java-based MESH client](https://digital.nhs.uk/services/message-exchange-for-social-care-and-health-mesh/compare-mesh-services), which utilises `.dat` and `.ctl` Kettering XML files, however, NHS Digital also provides a [web-based RESTful API](https://digital.nhs.uk/developer/api-catalogue/message-exchange-for-social-care-and-health-api).
 
-[Documentation on how to send ITK3 FHIR resource bundles via MESH](https://developer.nhs.uk/apis/itk3messagedistribution-2-9-0/mesh.html) is sparse, and NHS Digital was contacted on 2021-11-15 to clarify on the following queries:
+[Documentation on how to send ITK3 FHIR resource bundles via MESH](https://developer.nhs.uk/apis/itk3messagedistribution-2-9-0/mesh.html) is sparse, and NHS Digital was contacted on 2021-11-15 to clarify the following queries:
 
 -   Whether the web-based RESTful API is required for sending FHIR payloads, or if the Java-based client can be used
 -   What content-types the API POST endpoints can accept, as ideally this would be sent as `application/json`
 
-The NHS Digital ITOC team (itoc.supportdesk@nhs.net) responded on 2021-11-16 stating that FHIR payloads can be sent by either methods, and that any type can be POSTed at the API endpoints.
+The NHS Digital ITOC team (itoc.supportdesk@nhs.net) responded on 2021-11-16 stating that FHIR payloads can be sent by either method and that any type can be POSTed at the API endpoints.
 Whilst it would be easy to stay with the Java-based MESH client, for the sake of posterity the web-based RESTful API will be adopted.
 
 ### Supplier Support
@@ -105,9 +105,9 @@ Dr. Mike Moore, the ToC Project Manager at NHS Digital, was contacted on 2021-11
 
 #### EMIS
 
-EMIS Health need to deliver Emis Web v9.13.11 to fix a workflow annotation issue before Full Rollout Approval (FRA) can be granted.
-The target for FRA or EMIS is 2021-12-22, however this may be delayed due to holidays.
-Post FRA, all of the GP practices using EMIS will need their MESH mailboxes reconfigured ot send and recieve ToC FHIR messages. This was completed on 2022-01-07.
+EMIS Health needs to deliver Emis Web v9.13.11 to fix a workflow annotation issue before Full Rollout Approval (FRA) can be granted.
+The target for FRA or EMIS is 2021-12-22, however, this may be delayed due to holidays.
+Post FRA, all of the GP practices using EMIS will need their MESH mailboxes reconfigured to send and receive ToC FHIR messages. This was completed on 2022-01-07.
 
 #### TPP's SystmOne
 
@@ -124,14 +124,14 @@ Our neighbouring trust, [Somerset NHS Foundation Trust](https://somersetft.nhs.u
 
 ### Approaching Early Adopters
 
-[Dorset County Hospital NHS Foundation Trust](https://www.dchft.nhs.uk/) (DCH), an early adopter of ITK3 Toc FHIR bundles, was approached on 2021-11-22 to see if they could advise both YDH and SFT on how they achieved adoption. Unfortunately, DCH does not have an in-house development team and is solely dependent on contractors and suppliers, who were unwilling to share due to it being achieved with proprietary solutions.
+[Dorset County Hospital NHS Foundation Trust](https://www.dchft.nhs.uk/) (DCH), an early adopter of ITK3 Toc FHIR bundles, was approached on 2021-11-22 to see if they could advise both YDH and SFT on how they achieved adoption. Unfortunately, DCH chose a third-party supplier for their ToC work, who were unwilling to share due to it being achieved with proprietary solutions.
 
 [Devon Partnership NHS Trust](https://dpt.nhs.uk/) (DPT), [Cambridge University Hospitals NHS Foundation Trust](https://cuh.nhs.uk/) (CUH), [Leeds Teaching Hospitals NHS Trust](https://www.leedsth.nhs.uk/) (LTH), and [Oxford University Hospitals NHS Foundation Trust](https://ouh.nhs.uk/) (OUH) are working with suppliers for their ToC implementation.
 
-[Essex Partnership University NHS Foundation Trust](https://eput.nhs.uk/) (EPUT) have built in-house and were happy to discuss their progress. On 2021-12-02 Marc Riding and George Fox from EPUT talked through their development over MS Teams, showing their Mental Health Discharge Summary ToC FHIR Bundle generation process.
+[Essex Partnership University NHS Foundation Trust](https://eput.nhs.uk/) (EPUT) have built in-house and was happy to discuss their progress. On 2021-12-02 Marc Riding and George Fox from EPUT talked through their development over MS Teams, showing their Mental Health Discharge Summary ToC FHIR Bundle generation process.
 Marc shared the code they had developed alongside supporting documentation.
 
-[Northumbria Healthcare NHS Foundation Trust](https://northumbria.nhs.uk/) (NH) have also built in-house and, on 2022-01-18, Richard Leonard and Christopher Rouse talked through their development over MS Teams. NH have used the [Java-based MESH client](https://digital.nhs.uk/services/message-exchange-for-social-care-and-health-mesh/compare-mesh-services), which utilises `.dat` and `.ctl` Kettering XML files, for sending Transfer of Care documents, and shared their process.
+[Northumbria Healthcare NHS Foundation Trust](https://northumbria.nhs.uk/) (NH) has also built in-house and, on 2022-01-18, Richard Leonard and Christopher Rouse talked through their development over MS Teams. NH has used the [Java-based MESH client](https://digital.nhs.uk/services/message-exchange-for-social-care-and-health-mesh/compare-mesh-services), which utilises `.dat` and `.ctl` Kettering XML files, for sending Transfer of Care documents, and shared their process.
 
 ## Accessing the MESH REST API
 
@@ -145,7 +145,7 @@ The API Management team responded on 2022-08-03, pointing us to the [Message Exc
 
 The ITOC team responded on 2022-08-10, directing us to the [Connect to a Path to Live environment](https://digital.nhs.uk/services/path-to-live-environments/connect-to-a-path-to-live-environment) page.
 
-From reviewing both pages, it appears that we need to request a test organisation and test mailbox prior to gaining access to the test APIs.
+From reviewing both pages, it appears that we need to request a test organisation and test mailbox before gaining access to the test APIs.
 
 The [Connect to a Path to Live environment](https://digital.nhs.uk/services/path-to-live-environments/connect-to-a-path-to-live-environment) page and adjacent [Development Environments](https://digital.nhs.uk/services/path-to-live-environments/development-environment) page state the need for a test organisation, so a test organisation was requested on 2022-08-10. The Test Data team responded on 2022-08-16 with a test organisation (B81008: DR KS TOMMINS' PRACTICE).
 
@@ -153,9 +153,9 @@ A test MESH mailbox was requested via the web form for both RA4 (YDHNSFT) and B8
 
 #### Steps
 
-1. Request test organisation to send test messages at from testdata@nhs.net
+1. Request test organisation to send test messages to, from testdata@nhs.net
 1. Fill in Excel spreadsheet sent by testdata@nhs.net and return
-1. Await test organisation creation (B81008) by NHS Digital's Test Data team, and corresponding email
+1. Await test organisation creation (B81008) by NHS Digital's Test Data team, and the corresponding email
 1. [Request test MESH mailbox](https://digital.nhs.uk/services/message-exchange-for-social-care-and-health-mesh/messaging-exchange-for-social-care-and-health-apply-for-a-mailbox) for live organisation (RA4), with the following Transfer of Care (FHIR) [workflow IDs](https://digital.nhs.uk/services/message-exchange-for-social-care-and-health-mesh/workflow-groups-and-workflow-ids):
     - TOC_FHIR_EC_DISCH (EC Discharge Summary A and E Report)
     - TOC_FHIR_IP_DISCH (Acute IP and Daycase Discharge)
