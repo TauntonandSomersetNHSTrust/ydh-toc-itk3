@@ -12,7 +12,7 @@
 
 > Yeovil District Hospital NHSFT's ITK3 Transfer Of Care Migration Work Logs
 
-## Intro
+## Overview
 
 ### Purpose
 
@@ -46,13 +46,13 @@ At the time of writing (2022-05-25), this has still not been resolved.
 
 It was [noticed in an article in Digital Health](https://digitalhealth.net/2020/08/clinical-patient-discharge-summaries-soon-to-be-sent-electronically-to-gps/) that TPP was trialling the support of FHIR resources in Dorset. We are hoping that migrating to NHS Digital's ITK3 Transfer of Care FHIR resource bundles will resolve the aforementioned issues and, if not, at least future-proof us for the eventual full migration to the HL7 FHIR standards.
 
-#### Overlapping Paragraph Examples
+#### Overlapping paragraph examples
 
 <img alttext="A document printed from TPP's SystmOne, with overlapping text" src="https://raw.githubusercontent.com/Fdawgs/ydh-toc-itk3/main/docs/images/example_overlapping_1.png" width="480">
 
 <img alttext="Another document printed from TPP's SystmOne, with overlapping text" src="https://raw.githubusercontent.com/Fdawgs/ydh-toc-itk3/main/docs/images/example_overlapping_2.png" width="480">
 
-#### Removed Images Examples
+#### Removed images examples
 
 What was sent to a Dorset-based GP practice:
 
@@ -62,7 +62,7 @@ How the document was saved and presented by TPP's SystmOne, note the missing hos
 
 <img alttext="A document printed from TPP's SystmOne, with the hospital logo missing" src="https://raw.githubusercontent.com/Fdawgs/ydh-toc-itk3/main/docs/images/example_missing_image_1_2.png" width="480">
 
-#### Missing Content Examples
+#### Missing content examples
 
 What was sent to a Dorset-based GP practice:
 
@@ -75,7 +75,7 @@ Oral'**:
 
 Luckily the practice pharmacist noticed it and raised this with us.
 
-## Info and Requirements Gathering
+## Info and requirements gathering
 
 ### Specifications
 
@@ -89,7 +89,7 @@ YDH will be looking at utilising the following Transfer of Care FHIR resources:
 -   Emergency Care Discharge
 -   Outpatient Clinic Letter
 
-### MESH Integration
+### MESH integration
 
 The ITK3 Transfer of Care FHIR resource bundles will need to be sent to GP surgeries in Somerset and Dorset, as well as other NHS trusts, via [MESH](https://digital.nhs.uk/services/message-exchange-for-social-care-and-health-mesh).
 
@@ -103,7 +103,7 @@ YDH currently uses the [Java-based MESH client](https://digital.nhs.uk/services/
 The NHS Digital ITOC team (itoc.supportdesk@nhs.net) responded on 2021-11-16 stating that FHIR payloads can be sent by either method and that any type can be POSTed at the API endpoints.
 Whilst it would be easy to stay with the Java-based MESH client, for the sake of posterity the web-based RESTful API will be adopted.
 
-### Supplier Support
+### Supplier support
 
 Dr. Mike Moore, the ToC Project Manager at NHS Digital, was contacted on 2021-11-15 regarding supplier support, and provided the following details:
 
@@ -118,7 +118,7 @@ Post FRA, all of the GP practices using EMIS will need their MESH mailboxes reco
 TPP's SystmOne gained FRA in 2020-08 for inpatient, emergency, and outpatient ToC FHIR resources.
 Mike Moore approved FRA for Mental Health Discharge ToC FHIR resources on 2021-11-17.
 
-### Issues With Migration From Current Processes
+### Issues with migration from current processes
 
 At present, YDH's documents are generated from supplier systems (Intersystems' TrakCare for inpatient and emergency discharge summaries, BigHand for outpatient letters) as unstructured PDFs.
 
@@ -126,7 +126,7 @@ The hope was that PDFs could be placed into Binary resources inside of the ITK3 
 
 Our neighbouring trust, [Somerset NHS Foundation Trust](https://somersetft.nhs.uk/) (SFT), is also looking to adopt ITK ToC FHIR bundles but will run into a similar issue as their documents are also generated from supplier systems (epro) as unstructured DOCX files.
 
-### Approaching Early Adopters
+### Approaching early adopters
 
 [Dorset County Hospital NHS Foundation Trust](https://www.dchft.nhs.uk/) (DCH), an early adopter of ITK3 Toc FHIR bundles, was approached on 2021-11-22 to see if they could advise both YDH and SFT on how they achieved adoption. Unfortunately, DCH chose a third-party supplier for their ToC work, who were unwilling to share due to it being achieved with proprietary solutions.
 
@@ -139,7 +139,7 @@ Marc shared the code they had developed alongside supporting documentation.
 
 ## Accessing the MESH REST API
 
-### Accessing the Development/Test APIs
+### Accessing the development/test APIs
 
 As noted in the requirements section above, NHS Digital's documentation regarding MESH adoption is confusing.
 
