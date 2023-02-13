@@ -48,30 +48,30 @@ It was [noticed in an article in Digital Health](https://digitalhealth.net/2020/
 
 #### Overlapping Paragraph Examples
 
-<img alttext="A document printed from TPP's SystmOne, with overlapping text" src="https://raw.githubusercontent.com/Fdawgs/ydh-toc-itk3/master/docs/images/example_overlapping_1.png" width="480">
+<img alttext="A document printed from TPP's SystmOne, with overlapping text" src="https://raw.githubusercontent.com/Fdawgs/ydh-toc-itk3/main/docs/images/example_overlapping_1.png" width="480">
 
-<img alttext="Another document printed from TPP's SystmOne, with overlapping text" src="https://raw.githubusercontent.com/Fdawgs/ydh-toc-itk3/master/docs/images/example_overlapping_2.png" width="480">
+<img alttext="Another document printed from TPP's SystmOne, with overlapping text" src="https://raw.githubusercontent.com/Fdawgs/ydh-toc-itk3/main/docs/images/example_overlapping_2.png" width="480">
 
 #### Removed Images Examples
 
 What was sent to a Dorset-based GP practice:
 
-<img alttext="A document generated at YDH, with the hospital logo present" src="https://raw.githubusercontent.com/Fdawgs/ydh-toc-itk3/master/docs/images/example_missing_image_1_1.png" width="480">
+<img alttext="A document generated at YDH, with the hospital logo present" src="https://raw.githubusercontent.com/Fdawgs/ydh-toc-itk3/main/docs/images/example_missing_image_1_1.png" width="480">
 
 How the document was saved and presented by TPP's SystmOne, note the missing hospital logo:
 
-<img alttext="A document printed from TPP's SystmOne, with the hospital logo missing" src="https://raw.githubusercontent.com/Fdawgs/ydh-toc-itk3/master/docs/images/example_missing_image_1_2.png" width="480">
+<img alttext="A document printed from TPP's SystmOne, with the hospital logo missing" src="https://raw.githubusercontent.com/Fdawgs/ydh-toc-itk3/main/docs/images/example_missing_image_1_2.png" width="480">
 
 #### Missing Content Examples
 
 What was sent to a Dorset-based GP practice:
 
-<img alttext="A document printed from TPP's SystmOne, with content present" src="https://raw.githubusercontent.com/Fdawgs/ydh-toc-itk3/master/docs/images/example_missing_content_1_1.png" width="480">
+<img alttext="A document printed from TPP's SystmOne, with content present" src="https://raw.githubusercontent.com/Fdawgs/ydh-toc-itk3/main/docs/images/example_missing_content_1_1.png" width="480">
 
 How the document was saved and presented by TPP's SystmOne, note the missing text **'clopidogrel 75mg film coated tablets -
 Oral'**:
 
-<img alttext="A document printed from TPP's SystmOne, with content missing" src="https://raw.githubusercontent.com/Fdawgs/ydh-toc-itk3/master/docs/images/example_missing_content_1_2.png" width="480">
+<img alttext="A document printed from TPP's SystmOne, with content missing" src="https://raw.githubusercontent.com/Fdawgs/ydh-toc-itk3/main/docs/images/example_missing_content_1_2.png" width="480">
 
 Luckily the practice pharmacist noticed it and raised this with us.
 
