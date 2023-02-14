@@ -10,7 +10,7 @@
 
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat)](https://github.com/prettier/prettier)
 
-> Yeovil District Hospital NHSFT's ITK3 Transfer Of Care Migration Work Logs
+> Yeovil District Hospital NHSFT's ITK3 Transfer Of Care migration work logs
 
 ## Overview
 
