@@ -3,7 +3,7 @@ updates:
     - package-ecosystem: github-actions
       commit-message:
           include: scope
-          prefix: build
+          prefix: ci
       directory: /
       schedule:
           interval: monthly
